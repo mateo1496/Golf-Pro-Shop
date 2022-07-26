@@ -1,0 +1,43 @@
+.bodyContact{
+    margin: 20px;
+}
+
+.titleContact{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.textContact{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
+
+}
+
+.numberContact{
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.retiroContact{
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.agradecimientoContact{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}

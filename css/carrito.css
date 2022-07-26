@@ -1,0 +1,8 @@
+.imagen-detalle-carrito {
+    width: 100px;
+    height: 120px;
+}
+
+#body-detalle-carrito p {
+    text-transform: capitalize;
+}

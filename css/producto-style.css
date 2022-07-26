@@ -1,0 +1,33 @@
+.capitaliza-titulo,
+.capitaliza-item {
+    text-transform: capitalize;
+}
+
+li > .capitaliza-item {
+    cursor: pointer;
+}
+
+.Talle-lista-items li p {
+    text-transform: uppercase;
+}
+
+.filtros-lista-items p {
+    text-transform: uppercase;
+}
+
+#botonLimpiar {
+    cursor: pointer;
+    border: none;
+}
+
+.imagenMuestraCarrousel {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-carrousel {
+    height: auto;
+    object-fit:fill;
+}
+
+

@@ -1,0 +1,66 @@
+#main-logo {
+    width: 150px;
+}
+
+.container > div > .oferta-elementos {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media ( max-width: 768px ) {
+    .container > div > .oferta-elementos {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.ver-mas-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge-carrito {
+    /* border: 2px solid blue; */
+    float: right;
+    margin-top: 50%;
+}
+
+.carrito-tarjeta-btn {
+    cursor: pointer;
+}
+
+.detalle-tarjeta {
+    color: rgb(43, 40, 40);
+    pointer-events: none;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Elegir";
+}
+
+#destacado-label {
+    font-size: bold;
+    text-shadow: black;
+}
+
+.capitaliza {
+    text-transform: capitalize;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.tachado {
+    text-decoration: line-through;
+}

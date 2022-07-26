@@ -1,0 +1,119 @@
+.admin-body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    border: solid 2px green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-boton-agregar-img {
+    display: flex;
+    align-items: center;
+}
+
+
+.boton-agregar-imagen {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+}
+
+.contenedor-boton-agregar-img {
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.contenedor-boton-agregar-img p {
+    border: 2px solid orange;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.boton-agregar-imagen > img {
+    object-fit: contain;
+    border: 2px solid green;
+}
+
+.imagen-container {
+    width: auto;
+    height: auto;
+}
+
+#adminImagen {
+    object-fit: contain;
+    width: 500px;
+    height: 600px;
+}
+
+.admin-header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.admin-header-container #main-logo {
+    width: 250px;
+}
+
+
+.contenedor-funciones-admin {
+    /* border: 2px solid orange; */
+    margin: 10px 30px 10px;
+}
+
+#encabezadoTablaProds {
+    text-transform: capitalize;
+}
+
+#imagenDetalle {
+    width: 50px;
+}
+
+
+
+#adminMuestraOferta {
+    width: 50%;
+}
+
+.admin-oferta-container {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+.admin-oferta-inputs {
+    width: 50%;
+}
+
+
+#formContainer {
+    background-image: url("/img/background/golfgrass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 20px;
+}
+
+.fila-detalle-styles, 
+.encabezado-detalle-style {
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.fila-detalle-styles button, 
+.encabezado-detalle-style button {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}

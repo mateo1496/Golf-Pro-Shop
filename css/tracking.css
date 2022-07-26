@@ -1,0 +1,26 @@
+.bodyTracking{
+    margin: 20px;
+}
+
+.titleTracking{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 20px;
+    text-align: center;
+}
+
+.subTitleTracking{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.textTracking{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+}
