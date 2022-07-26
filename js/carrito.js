@@ -104,7 +104,7 @@ const finalizarCompra = () => {
 
         const nombre = productoUnico.data().nombre.toUpperCase();
         const marca = productoUnico.data().marca.toUpperCase();
-        const talle = productoUnico.data().talle.toUpperCase();
+        const talle = productoUnico.data();
         const precio = productoUnico.data().precio.toUpperCase();
 
         detalleDeCompra += `-${ id }. ${ nombre }, marca: ${ marca }, talle: ${ talle }, precio: $${ precio }%0A`
