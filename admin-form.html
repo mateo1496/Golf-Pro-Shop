@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon/golf-clubs.ico" type="image/ico" />
+    <title>Golf Pro Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/adminstyle.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<!--================Header Menu Area =================-->
+
+<header class="admin-header">
+    <div class="admin-header-container">
+        <a class="navbar-brand logo_h" href="index.html">
+            <img id="main-logo" src="img/logogps.png" alt="" />
+        </a>
+    </div>
+</header>
+
+<!--================Header Menu Area =================-->
+
+<body id='adminBody' class="admin-body">
+    <div class="contenedor-funciones-admin  d-flex">
+        <button id='botonCargarProds' type="button" class="btn btn-success m-1">Cargar Producto</button>
+        <!-- <button id='botonCargarOferta' type="button" class="btn btn-success m-1">Cargar Oferta</button> -->
+        <button id='botonDetalleProds' type="button" class="btn btn-success m-1">Detalle Productos</button>
+        <button id='volverIndex' type="button" class="btn btn-dark m-1 ml-auto p-2">Home</button>
+    </div>
+|    <div id='formContainer' class="form-container">
+        <div class="inputs-container">
+            <form id="formAdminPrincipal">
+                <div class="mb-3">
+                    <input 
+                        placeholder="Nombre del Producto" 
+                        type="text" 
+                        class="form-control" 
+                        name="nombre" 
+                        id="formInputNombre" 
+                        autofocus
+                        required=""
+                    >
+                </div>
+                <div class="mb-3">
+                    <input 
+                        type="text"
+                        class="form-control"
+                        id="formInputMarca"
+                        placeholder="Marca"
+                    >
+                </div>
+                <!-- agrega select para categoría -->
+                <div id='divCategoria' class="mb-3" ></div>
+                <div id='divGenero' class="mb-3" ></div>
+                <div id='divTalle' class="mb-3" ></div>
+
+                <div class="mb-3">
+                    <input
+                        type="number"
+                        class="form-control"
+                        id="formInputPrecio"
+                        placeholder="Precio"
+                    >
+                </div>
+                <div class="mb-3">
+                    <input 
+                        type="number"
+                        class="form-control"
+                        id="formInputPrecioAnt"
+                        placeholder="Opcional: precio anterior"
+                    >
+                </div>
+                <div class="mb-3 alert alert-success form-check">
+                    <input type="checkbox" class="form-check-input" id="checkDestacado">
+                    <label class="form-check-label" id="destacado-label" for="exampleCheck1">Destacado</label>
+                </div>
+                <div class="mb-3 custom-file">
+                    <input type="file" class="custom-file-input" id="formInputImagen" lang="es" multiple>
+                    <label class="custom-file-label" for="customFile" id="labelImgForm">Seleccionar Imagen</label>
+                </div>
+                <button type="submit" id="formBotonAgregar" class="btn btn-dark">Agregar</button>
+            </form>
+        </div>
+    </div>
+    <div id='adminOfertaContainer' class='admin-oferta-container' >
+        <div id="formOferta" class="admin-oferta-inputs"></div>
+        <div id="adminMuestraOferta" >
+            <section class="container-oferta offer_area">
+                <!-- se muestra la publicación de la oferta -->
+            </section>
+        </div>
+    </div>
+        <div id="tablaProductos" ></div>
+
+        
+    <!-- j query -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- archivos de desarrolladores     -->
+    <script type="module" src="/js/data/firebase.js"></script>
+    <script type="module" src="js/adminForm/admin-inputs.js"></script>
+    <script type="module" src="js/adminForm/adminDetalleProds.js"></script>
+    <script type="module" src="js/adminForm/admin-funciones.js"></script>
+    <script type="module" src="js/adminForm/admin-values.js"></script>
+    <script type="module" src="js/productoDestacado.js"></script>
+    <script type="module" src="js/adminForm/admin-oferta.js"></script>
+    <script type="module" src="js/adminForm/modalEdicion.js"></script>
+</body>
+</html>
