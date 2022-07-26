@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/icon/golf-clubs.ico" type="image/ico" />
+    <title>Golf Pro Shop</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/producto-style.css">
+    <link rel="stylesheet" href="css/fontello.css" />
+  </head>
+
+  <body>
+  <!--================Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html">
+            <img id="main-logo" src="img/logogps.png" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset w-100" id="navbarSupportedContent">
+            <div class="row w-100 mr-0">
+              <div class="col-lg-7 pr-0">
+                <ul class="nav navbar-nav center_nav pull-right">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">Carrito de Compras</a>
+                        <!-- <a class="nav-link" href="single-product.html">Carrito de Compras</a> -->
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">Cómo Comprar</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="procesocompra.html">Proceso de Compra</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-5 pr-0">
+                <ul class="nav navbar-nav navbar-right right_nav pull-right">
+                  <li class="nav-item">
+                    <a href="carrito.html" class="icons" id="contenedor-carrito">
+                      <i class="ti-shopping-cart" id="carritoNavBar">
+                        <span class="badge badge-danger" id="badge-carrito"></span>
+                      </i>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="icons" id="loginUsuario">
+                      <i class="ti-user" aria-hidden="true" id="iconoLog"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="icons" id="botonLlaveAdmin" hidden >
+                      <i class="ti-key" aria-hidden="true" id="panelAdmin" ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div class="banner_content d-md-flex justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+              <h2>Nuestros Productos</h2>
+            </div>
+            <div class="page_link">
+              <a href="index.html">Home</a>
+              <a href="productos.html">Productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Category Product Area =================-->
+    <section class="cat_product_area section_gap">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div class="col-lg-9">
+            <div class="product_top_bar">
+              <div class="left_dorp">
+                <select class="sorting" id="selectOrdenar" >
+                  <option value="">Más Populares</option>
+                  <option value="1">Menor Precio</option>
+                  <option value="2">Mayor Precio</option>
+                </select>
+              </div>
+            </div>
+            <div class="latest_product_inner">
+              <div class="prods-filtro row" id="filtrosProdsContainer">
+                <!-- muestra productos filtrados -->
+              </div>
+            </div>
+          </div>
+          <div class="filtros-container col-lg-3">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Category Product Area =================-->
+
+  <!--================ start footer Area  =================-->
+  <footer class="footer-area section_gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Artículos</h4>
+          <ul>
+            <li><a href="productos.html">Remeras</a></li>
+            <li><a href="productos.html">Chombas</a></li>
+            <li><a href="productos.html">Buzos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="productos.html">Hombres</a></li>
+            <li><a href="productos.html">Mujeres</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+        </div>
+        <div class="col-lg-4 col-md-6 single-footer-widget">
+          <h4>Registrate</h4>
+          <p>Para recibir más información sobre nuestras ultimas noticias</p>
+          <button id='botonRegistrarMail' class="main_btn btn btn-default">Aceptar</button>
+        </div>
+      </div>
+      <div class="footer-bottom row align-items-center">
+        <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <div class="col-lg-4 col-md-12 footer-social">
+          <a href="https://www.instagram.com/golf.usa2.ok/"><i class="fa fa-instagram"></i></a>
+          <a href="https://wa.me/5493513430638?text=¡Golf%20Pro%20Shop!%20Hola,%20quiero%20contactarte."><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ícono fijo de Whatsapp -->
+  <div>
+    <a href="https://wa.me/5493513430638?text=¡Golf%20Pro%20Shop!%20Hola,%20¿podrías%20ayudarme?" class="btn-wsp" target="_blank">
+      <i class="fa fa-whatsapp icono"></i>
+    </a>
+  </div>
+  <!--fin ícono fijo de Whatsapp -->
+
+  <!--================ End footer Area  =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- scripts de los desarrolladores -->
+    <script type="module" src="js/data/firebase.js"></script>
+    <script type='module' src="js/carrito.js"></script>
+    <script type="module" src="js/productos-filtro.js"></script>
+    <script type="module" src="js/filtros.js"></script>
+  </body>
+</html>
